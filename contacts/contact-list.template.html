@@ -1,0 +1,16 @@
+<div class="row">
+<div class="search-box-btn">
+
+	<div class="btn-group">
+	<span id="searchicon" ng-click="$ctrl.search()" class="glyphicon glyphicon-search"></span>
+  	<input id="searchinput" type="text" placeholder="Search" class="form-control" ng-model="$ctrl.query">
+  	<span id="searchclear" ng-click="$ctrl.clear()" class="glyphicon glyphicon-remove"></span>
+	</div>
+    </div>
+<br>	
+<ul class="list-group  list-special">
+  <li class="list-group-item" ng-repeat="contact in $ctrl.contacts | filter:$ctrl.searchquery track by $index">
+    <span class="contact-name">{{contact.name}}<a href="#!/person/{{contact.id}}"><i class="glyphicon glyphicon-triangle-right pull-right pull-right" aria-hidden="true"></i></a></span>
+  </li>
+</ul>
+</div>

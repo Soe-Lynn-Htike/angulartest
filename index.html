@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="contactApp" >
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contact App</title>
+    <meta name="author" content="ContactApp" />
+    <meta name="description" content="ContactApp" />
+    <meta name="keywords"  content="ContactApp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.scss" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script data-require="angularjs@1.6.4" data-semver="1.6.4" src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.4/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="app.config.js"></script>
+    <script type="text/javascript" src="contacts/contact-list.modules.js"></script>
+    <script type="text/javascript" src="contacts/contact-list.component.js"></script>
+    <script type="text/javascript" src="contacts/contact-detail.modules.js"></script>
+    <script type="text/javascript" src="contacts/contact-detail.component.js"></script>
+    <script type="text/javascript" src="login/log-in.modules.js"></script>
+    <script type="text/javascript" src="login/log-in.component.js"></script>
+
+  </head>
+
+  <body>
+  	
+  	<div class="container search-container">
+      <div class="row search-contact col-md-12 col-xs-12">
+        <div class="col-md-3 col-xs-4">
+        <contact-list> </contact-list>
+        </div>
+        <div class="col-md-9 col-xs-8">
+          <log-in></log-in>
+          <div class="clearfix"></div>
+          <div class="col-md-12 col-xs-12" ng-view></div>
+        </div>
+      </div>
+  		
+  	</div>
+    
+  </body>
+
+</html>

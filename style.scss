@@ -1,0 +1,140 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.search-contact {
+    padding-top: 30px;
+}
+
+.fa.fa-user {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.list-special .list-group-item:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.list-special .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.list-group-item {
+    padding: 20px 15px;
+}
+
+.form-control {
+    border-radius: 16px;
+    padding: 6px 20px;
+}
+
+#searchicon {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 11px;
+    cursor: pointer;
+    color: #000000;
+}
+
+#searchclear {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 11px;
+    cursor: pointer;
+    color: #000000;
+}
+
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: #383838;
+    color: #FFFFFF;
+}
+
+.btn-lg .btn-primary {
+    font-size: 20px;
+}
+
+.message-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.description-separator {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mobile-separator {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Mobile and Desktop View*/
+@media (max-width: 768px) {
+    #searchinput {
+        width: 150px;
+    }
+
+    span.contact-name {
+        font-size: 10px;
+    }
+
+    .fa.fa-angle-right {
+        font-size: 20px;
+        color: #000000;
+    }
+    .btn-primary {
+        background-color: #383838;
+        color: #FFFFFF;
+        font-size: 12px;
+    }
+
+    #hearts {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    #searchinput {
+        width: 300px;
+    }
+
+    .fa.fa-angle-right {
+        font-size: 30px;
+        color: #000000;
+    }
+    .btn-primary {
+        background-color: #383838;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+
+    #hearts {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+}
+
+i.glyphicon.glyphicon-triangle-right.pull-right.pull-right {
+    color: black;
+}

@@ -1,0 +1,45 @@
+
+	<div class="col-md-4 col-xs-12">
+		<img class="img-rounded img-responsive" ng-src="{{$ctrl.person.img }}">
+	</div>
+
+	<div class="col-md-8 col-xs-12">
+	<div class="mobile-separator visible-xs"> </div>
+	<button  class="btn btn-lg btn-primary" ng-click="$ctrl.message()">SEND MESSAGE!</button>
+	
+	<div class="mobile-separator visible-xs"> </div>
+	<ul class="message-list">
+	<li id="hearts"></span></li>
+		</ul>
+	</div>
+
+	<div class="col-md-12 col-xs-12 description-separator">
+		<h5>{{ $ctrl.person.Description }}</h5>
+	</div>	
+	
+	<div class="col-md-12 col-xs-12">
+		<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th>Likes</th>
+			<th>Dislikes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="row in :: $ctrl.rows">
+			<td>{{:: row.like }}</td>
+			<td>{{:: row.dislike }}</td>
+		</tr>
+	</tbody>
+	</table>
+	<div class="row col-md-12" ng-if="$ctrl.messages.length > 0">
+          <h3>Messages</h3>
+          <ul class="list-group">
+    		<li class="list-group-item" ng-repeat="message in $ctrl.messages">{{message}}</li>
+          </ul>
+    </div>
+	</div>
+
+
+
+
